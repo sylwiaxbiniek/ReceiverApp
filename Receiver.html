@@ -1,19 +1,17 @@
 <html>
-<head>
-</head>
+
+<title>Hello Chromecast</title>
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<style>body { font-family: 'Droid Sans', Helvetica; font-size: 3em; text-align: center; color: white; margin: 5%;}</style>
+
+<script src="https://www.gstatic.com/cast/js/receiver/1.0/cast_receiver.js"></script>
+<script type="text/javascript">
+	var	castAppId = '{ Your Google Cast Api Id }';
+	var receiver = new cast.receiver.Receiver(castAppId, ['Test'], "", 5);
+	receiver.start();
+</script>
+
 <body>
-  <cast-media-player id="player"></cast-media-player>
-  <style>
-    #player {
-        --splash-color: rgba(255, 255, 128, .5);
-    }
-  </style>
-  <script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/caf_receiver/v3/cast_receiver_framework.js">
-  </script>
-  <script>
-  </script>
-  <body>
 	<h1>Hello Chromecast</h1>
 	<h2>Google Cast Receiver</h2>
-</body>
-</html>
